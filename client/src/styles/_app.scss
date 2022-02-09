@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "storytime";
+    src: url("./Storytime.ttf");
+}
+.App {
+    height: 100%;
+    width: 100%;
+    #app {
+        .dataZone{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 35%;
+        }
+        #homeLoader{
+            background: url("./weedmaps-420.gif") center/cover ;
+            width: 175px;
+            height: 175px;
+            margin-bottom: 50px;
+        }
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .drugBox {
+            height: 70%;
+            background: rgba(29, 29, 29, 0.836);
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.3rem;
+            letter-spacing: 0.3rem;
+            color: rgb(106, 153, 77);
+            font-family: "storytime" !important;
+        }
+        p {
+            text-align: center;
+        }
+        .spleefNumber {
+            font-size: 4rem !important;
+        }
+    }
+}
+
+// BUTTON
+
+#btnBlock {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 48, 92);
+    padding: 10px;
+    height: 50%;
+    width: 30%;
+    &:hover {
+        @media screen and (min-width: 1200px) {
+            cursor: pointer;
+            background-color: #333 !important;
+            transform: translateY(2px);
+        }
+    }
+}
+
+#leaderboardButton {
+    height: 5%;
+    width: 35%;
+    background: rgb(8, 85, 8);
+        &:hover {
+        @media screen and (min-width: 1200px) {
+            cursor: pointer;
+            background-color: #333;
+            transform: translateY(2px);
+        }
+    }
+}
+
+.selectedBtn {
+    background-color: #333 !important;
+    transform: translateY(2px);
+}
+// MEDIA
+
+@media screen and (max-width: 576px) {
+    .drugBox,.leaderBox {
+        width: 80% !important;
+        h1 {
+            font-size: 1.6rem !important;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}

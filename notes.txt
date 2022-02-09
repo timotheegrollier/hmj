@@ -1,0 +1,3 @@
+Ne pas oublier de virer le git auto de React dans le dossier client
+Pour heroku garder ce package.json
+Attention pour la PWA le service Worker se met en cache et fout le bordel peut etre resolu avec type="text/babel"

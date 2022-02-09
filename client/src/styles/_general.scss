@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: url("cannabis-2152604_1920.jpg") center/cover fixed;
+    color: white;
+    #root {
+        user-select: none;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.btn{
+    color: $mark-bg !important;
+}

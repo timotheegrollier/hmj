@@ -1,0 +1,66 @@
+#leaderboard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .leaderBox {
+        height: 70%;
+        background: rgba(29, 29, 29, 0.836);
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        
+        #leaderboardSettings{
+            position: absolute;
+            top: 5px;
+            button{
+                width: 100% !important;
+            }
+        }
+        .leaderboardButtons {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+            #backButton {
+                width: 40%;
+                height: 5%;
+                @media screen and(min-width:768px) {
+                    width: 25%;
+                }
+            }
+            #saveButton {
+                background-color: forestgreen;
+                width: 40%;
+                height: 5%;
+                @media screen and(min-width:768px) {
+                    width: 25%;
+                }
+            }
+            #resaveButton{
+                display: none;
+                background-color: forestgreen;
+                width: 40%;
+                height: 5%;
+                @media screen and(min-width:768px) {
+                    width: 25%;
+                }
+            }
+            #resetLeaderboard{
+                display: none;
+                background-color: red;
+                width: 40%;
+                height: 5%;
+                @media screen and(min-width:768px) {
+                    width: 25%;
+                }
+            }
+
+
+        }
+    }
+}
